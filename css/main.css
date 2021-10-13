@@ -544,6 +544,56 @@ Media Queries
   }
 }
 
+.section-slider {
+  background-color: orange;
+}
+
+.section-medios-pago {
+  background-color: grey;
+}
+
+.section-marcas {
+  background-color: lightsteelblue;
+}
+
+.section-productos {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-productos__filtros {
+  padding: 1rem 0.5rem;
+  width: 25%;
+  background-color: lightgreen;
+}
+
+.section-productos__filtros__lista {
+  margin-top: 2rem;
+}
+
+.section-productos-cards {
+  background-color: #eee;
+}
+
+.section-cards {
+  background-color: #f1f2f3;
+  padding: 1em;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding: 1em;
+}
+
+@media (min-width: 1200px) {
+  .cards-container {
+    padding: 2em;
+    gap: 2em;
+  }
+}
 .main-alta {
   display: flex;
   justify-content: center;
@@ -821,58 +871,54 @@ Media Queries
   color: #eee;
 }
 
+.main-sucursal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  color: #eee;
+  gap: 2em;
+}
+@media (max-width: 720px) {
+  .main-sucursal {
+    background-size: cover;
+  }
+}
+
+.sucursal-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1f2483;
+  min-width: 200px;
+  max-width: 400px;
+  width: 50%;
+  padding: 50px 30px;
+  border-radius: 2em;
+}
+.sucursal-container__tittle {
+  color: #ff7e55;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.sucursal-container__mapa {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.sucursal-container__datos {
+  margin-bottom: 15px;
+}
+.sucursal-container__datos__text {
+  margin-left: 0.5em;
+}
+
 .main-footer {
   background-color: #46515e;
   color: #eee;
-}
-
-.section-slider {
-  background-color: orange;
-}
-
-.section-medios-pago {
-  background-color: grey;
-}
-
-.section-marcas {
-  background-color: lightsteelblue;
-}
-
-.section-productos {
-  display: flex;
-  flex-direction: row;
-}
-
-.section-productos__filtros {
-  padding: 1rem 0.5rem;
-  width: 25%;
-  background-color: lightgreen;
-}
-
-.section-productos__filtros__lista {
-  margin-top: 2rem;
-}
-
-.section-productos-cards {
-  background-color: #eee;
-}
-
-.section-cards {
-  background-color: #f1f2f3;
-  padding: 1em;
-}
-
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-  padding: 1em;
-}
-
-@media (min-width: 1200px) {
-  .cards-container {
-    padding: 2em;
-    gap: 2em;
-  }
 }
