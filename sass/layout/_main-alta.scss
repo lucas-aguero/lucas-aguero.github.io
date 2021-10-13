@@ -1,0 +1,19 @@
+.main-alta {
+  // display: none;
+  // display: flex;
+  // flex-direction: column;
+  background-image: url("bkg");
+
+  
+  @media (max-width: 768px) {
+      .section-slider {
+          display: none;
+        }
+        
+        .section-productos {
+          display: flex;
+          // flex-direction: column;
+
+        }
+  }
+}
