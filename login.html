@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
-    
+
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <script src="https://kit.fontawesome.com/7c57e8ac90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
@@ -16,8 +16,8 @@
 </head>
 
 <body>
-     <!-- ******** Header: Comienza ******** -->
-     <header class="main-header">
+    <!-- ******** Header: Comienza ******** -->
+    <header class="main-header">
         <div class="main-header__bars">
             <div class="main-header__bars__logo-container search-bar__logo-container">
                 <div class="main-header__bars__logo-container__img-full"
@@ -176,12 +176,12 @@
             <h3 class="login-container__tittle">Bienvenido</h3>
             <form class="login-container__form">
                 <div class="login-container__form__input">
-                    <label for="">E-mail</label>
-                    <input type="email" required>
+                    <label for="login-email">E-mail</label>
+                    <input id="login-email" type="email" name="login-email"required>
                 </div>
                 <div class="login-container__form__input">
-                    <label for="">Contraseña</label>
-                    <input type="password" required>
+                    <label for="login-password">Contraseña</label>
+                    <input id="login-password" type="password" name="login-password"required>
                 </div>
                 <button type="submit" class="login-container__form__button">Ingresar</button>
             </form>

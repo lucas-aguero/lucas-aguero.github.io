@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alta Producto</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <script src="https://kit.fontawesome.com/7c57e8ac90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
+
+
+
 </head>
 
 <body>
-      <!-- ******** Header: Comienza ******** -->
-      <header class="main-header">
+    <!-- ******** Header: Comienza ******** -->
+    <header class="main-header">
         <div class="main-header__bars">
             <div class="main-header__bars__logo-container search-bar__logo-container">
                 <div class="main-header__bars__logo-container__img-full"
@@ -166,139 +171,62 @@
 
     <!-- ******** Main: Comienza ******** -->
     <main class="main-alta">
-        <div class="form__container form__container--load">
+        <!-- <div class="main-alta__blur"></div> -->
 
-            <form action="node.js" method="POST" class="form form--load">
 
-                <div class="form__box form--load__box">
+        <!-- nombre, precio, stock, marca, categoria, foto, detalles, envio_sin_cargo -->
 
-                    <div class="form--load__input-container">
-                        <label for="product-name" class="form--load__input-label">
-                            Nombre de producto: 
-                        </label>
-                        <input 
-                            type="text" 
-                            class="form--load__input" 
-                            id="product-name" 
-                            name="product-name"
-                            required
-                            >
-                    </div>
 
-                    <div class="form--load__input-container">
-                        <label for="product-price" class="form--load__input-label">
-                            Precio:
-                        </label>
-                        <input 
-                            type="number" 
-                            class="form--load__input" 
-                            id="product-price" 
-                            name="product-price"
-                            required
-                            >
-                    </div>
-
-                    <div class="form--load__input-container">
-                        <label for="product-stock" class="form--load__input-label">
-                            Stock: 
-                        </label>
-                        <input 
-                            type="number" 
-                            class="form--load__input" 
-                            id="product-stock" 
-                            name="product-stock"
-                            required
-                            >
-                    </div>
-        
-                    <div class="form--load__input-container">
-                        <label for="product-brand" class="form--load__input-label">
-                            Marca: 
-                        </label>
-                        <input 
-                            type="text" 
-                            class="form--load__input" 
-                            id="product-brand" 
-                            name="product-brand"
-                            required
-                            >
-                    </div>
-        
-                    <div class="form--load__input-container">
-                        <label for="product-category" class="form--load__input-label">
-                            Categoría:
-                        </label>
-                        <select  
-                            class="form--load__select" 
-                            id="product-category" 
-                            name="product-category"
-                            required
-                            >
-                            <option value="">- Seleccionar -</option>
-                            <option value="cel-tel">Celulares y Teléfonos</option>
-                            <option value="comput">Computación</option>
-                            <option value="cam-acc">Cámaras y Accesorios</option>
-                            <option value="ele-aud-vid">Electrónica, Audio y Video</option>
-                            <option value="con-gam">Consolas y Videojuegos</option>
-                            <option value="tel">Televisores</option>
-                        </select>
-                    </div>
-
-                    <div class="form--load__input-container">
-                        <label for="product-image" class="form--load__input-label">
-                            Foto: 
-                        </label>
-                        <input 
-                            type="file" 
-                            class="form--load__input" 
-                            id="product-image" 
-                            name="product-image" 
-                            accept="image/png, image/jpeg"
-                            required
-                            >
-                    </div>
-        
-                    <div class="form--load__input-container form--load__textarea-container">
-                        <label for="product-details" class="form--load__input-label">
-                            Detalles: 
-                        </label>
-                        <textarea 
-                            class="form--load__textarea" 
-                            id="product-details" 
-                            name="product-details"
-                            required
-                            ></textarea>
-                    </div>
-        
-                    <div class="form--load__input-container">
-                        <input 
-                            type="checkbox" 
-                            class="form--load__input" 
-                            id="product-free-shipping" 
-                            name="product-free-shipping"
-                            checked
-                            >
-                        <label 
-                            for="product-free-shipping" 
-                            class="form--load__input-label">
-                            Envío sin cargo
-                        </label>
-                    </div>
-        
-                    <div class="form--load__input-container">
-                        <input 
-                        type="submit" 
-                        class="form--load__imput button" 
-                        id="product-submit" 
-                        name="product-submit"
-                        >
-                    </div>
-                    
+        <div class="alta-container">
+            <h3 class="alta-container__tittle">Alta Producto</h3>
+            <form class="alta-container__form">
+                <div class="alta-container__form__input">
+                    <label for="producto-nombre">Producto</label>
+                    <input id="producto-nombre" type="texto" name="producto-nombre" required>
                 </div>
-                
+                <div class="alta-container__form__input">
+                    <label for="producto-password">Marca</label>
+                    <input id="producto-password" type="texto" name="producto-password" required>
+                </div>
+                <div class="alta-container__form__input">
+                    <label for="producto-precio">Precio</label>
+                    <input id="producto-precio" type="number" name="producto-precio" required min="0">
+                </div>
+                <div class="alta-container__form__input alta-container__form__input__envio-gratis">
+                    <label for="producto-envio">Envio Gratis</label>
+                    <input id="producto-envio" type="checkbox" name="producto-envio">
+                </div>
+                <div class="alta-container__form__input">
+                    <label for="producto-categoria">Categoria</label>
+                    <select id="producto-categoria" class="alta-container__form__input__select" name="producto-categoria" id="">
+                        <option value="">Selecciones una Opción</option>
+                        <option value="1">Audio</option>
+                        <option value="2">Camaras</option>
+                        <option value="3">Celulares</option>
+                        <option value="4">Gadgets</option>
+                        <option value="5">TV</option>
+                    </select>
+                </div>
+                <div class="alta-container__form__input">
+                    <label for="producto-detalles">Detalles</label>
+                    <textarea id="producto-detalles" class="alta-container__form__input__textarea" name="producto-detalles" cols="30" rows="10"></textarea>
+                </div>
+                <div class="alta-container__form__input">
+                    <label for="producto-archivo">Archivo</label>
+                    <input id="producto-archivo" type="file"  name="producto-archivo" >
+                </div>
+                <div class="alta-container__form__input">
+                    <label for="producto-foto">Foto</label>
+                    <input id="producto-foto" type="file" name="producto-foto" >
+                </div>
+
+                <button type="submit" class="alta-container__form__button">Ingresar</button>
+                <button type="reset" class="alta-container__form__button">Restablecer</button>
             </form>
 
         </div>
+        
+            
     </main>
     <!-- ******** Main: Termina ******** -->
 

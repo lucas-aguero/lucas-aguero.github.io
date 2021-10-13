@@ -1,4 +1,4 @@
-.main-login {
+.main-contacto {
   // display: none;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-.login-container {
+.contacto-container {
   background-color: $color-dark-hig-transparent;
   min-width: 400px;
   max-width: 600px;
@@ -66,14 +66,14 @@
       padding-left: 0.5em;
       color: $color-light-hig;
       font-size: 1.5em;
-      
+
       &::selection {
         background-color: $color-light-mid-transparent;
         color: $color-light-low;
       }
     }
   }
-  
+
   &__form__button {
     outline: none;
     font-weight: bold;

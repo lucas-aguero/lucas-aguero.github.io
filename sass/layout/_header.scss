@@ -121,6 +121,7 @@
         padding: 0.5em 1em;
         border-radius: 1em;
         background-color: $color-light-mid;
+        cursor: pointer;
 
         &:focus {
           outline: 1px solid $color-dark-low;

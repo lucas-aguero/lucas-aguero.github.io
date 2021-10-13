@@ -1,19 +1,140 @@
 .main-alta {
-  // display: none;
-  // display: flex;
-  // flex-direction: column;
-  background-image: url("bkg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../img/bkg/fondo-altas.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 
-  
-  @media (max-width: 768px) {
-      .section-slider {
-          display: none;
-        }
-        
-        .section-productos {
-          display: flex;
-          // flex-direction: column;
+  color: $color-light-low;
 
-        }
+  @media (max-width: 720px) {
+    background-size: cover;
   }
+}
+
+.main-alta__blur {
+  background: rgba(
+    224,
+    102,
+    21,
+    0.2
+  ); // Make sure this color has an opacity of less than 1
+  backdrop-filter: blur(10px); // This be the blur
+  height: 50vh;
+  width: 100%;
+}
+
+.alta-container {
+  // display: flex;
+
+  background-color: $color-dark-hig-transparent;
+  min-width: 400px;
+  max-width: 600px;
+  width: 50%;
+  padding: 50px 30px;
+  border-radius: 2em;
+  // height: 100%;
+
+
+  &__tittle {
+    color: $color-light-mid;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  &__form__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+
+    & label {
+      color: $color-light-low;
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+
+    &__envio-gratis {
+      display: flex;
+      flex-direction:row-reverse;
+      justify-content: center;
+
+    }
+
+    & input {
+      background: $color-dark-low-transparent;
+      border-radius: 0.3em;
+      border: none;
+      border-bottom: 1px solid $color-light-low;
+      outline: none;
+      padding-left: 0.5em;
+      color: $color-light-hig;
+      font-size: 1.5em;
+      
+      &::selection {
+        background-color: $color-light-mid-transparent;
+        color: $color-light-low;
+      }
+    }
+
+    &__textarea {
+      border-radius: 0.3em;
+      border-bottom: 1px solid $color-light-low;
+      border: none;
+      outline: none;
+      background-color: $color-dark-hig-transparent;
+      width: 100%;
+      resize: vertical;
+      color: $color-light-mid;
+      padding: 1em;
+    }
+    
+    &__select {
+      border-radius: 0.3em;
+      border: none;
+      outline: none;
+      background-color: $color-dark-hig-transparent;
+      width: 100%;
+      resize: vertical;
+      padding: 0.8em;
+
+      font-size: 1em;
+
+      color: $color-light-mid;
+    }
+  }
+
+  &__form__button {
+    outline: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    background-color: $color-light-mid;
+    color: $color-dark-mid;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1em;
+
+    align-self: center;
+
+    &:focus {
+      outline: 1px solid $color-dark-low;
+    }
+
+    &:hover {
+      background-color: $color-dark-mid;
+      color: $color-light-low;
+    }
+    
+  
+    
+  }
+
+
 }
