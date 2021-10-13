@@ -1,6 +1,6 @@
 .section-slider {
   // background-color: $color-light-low;
-    background-color: orange;
+  background-color: orange;
   //   width: 80%;
   //   margin: 0 auto;
 }
@@ -19,17 +19,17 @@
 }
 
 .section-productos__filtros {
-    padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem;
   width: 25%;
   background-color: lightgreen;
 }
 
 .section-productos__filtros__lista {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .section-productos-cards {
-    background-color: $color-light-low;
+  background-color: $color-light-low;
 }
 
 .section-cards {
@@ -47,7 +47,7 @@
 
 @media (min-width: 1200px) {
   .cards-container {
-      padding: 2em;
-        gap: 2em;
-    }
+    padding: 2em;
+    gap: 2em;
+  }
 }

@@ -244,8 +244,11 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   width: 20%;
+  color: #ff7e55;
 }
 .search-bar__container-icons__session, .search-bar__container-icons__favourites, .search-bar__container-icons__cart {
+  border: 1px solid red;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -253,6 +256,18 @@ body {
   flex: 0 0 1.5em;
   color: #ff7e55;
   font-size: 2.5em;
+}
+.search-bar__container-icons__session:hover, .search-bar__container-icons__favourites:hover, .search-bar__container-icons__cart:hover {
+  border: 1px solid #46515e;
+  border-radius: 0.8em;
+  padding: 0.5em 0.2em;
+  background-color: #46515e;
+}
+.search-bar__container-icons__link {
+  display: block;
+  height: 100%;
+  color: #ff7e55;
+  text-decoration: none;
 }
 
 /*********************************
@@ -436,6 +451,12 @@ NAV BAR
     width: 100%;
     justify-content: space-evenly;
     padding: 1em 0;
+  }
+  .search-bar__container-icons:hover {
+    border: 1px solid #46515e;
+    border-radius: 1em;
+    padding: 0.5em 1.2em;
+    background-color: #46515e;
   }
 
   .menu-toggle {

@@ -111,12 +111,14 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 20%;
+    color: $color-light-mid;
     // flex: 0 0 1.5em;
-    // border: 1px solid red;
-
+    
     &__session,
     &__favourites,
     &__cart {
+      border: 1px solid red;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -124,7 +126,30 @@
       flex: 0 0 1.5em;
       color: $color-light-mid;
       font-size: $icons-size-search-bar;
+      &:hover {
+        border: 1px solid $color-dark-low;
+        border-radius: .8em;
+        padding: 0.5em 0.2em;
+        background-color: $color-dark-low;
+      }
+
     }
+
+    &__link {
+      display: block;
+      height: 100%;
+      color: $color-light-mid;
+      text-decoration: none;
+      
+      // &:visited,
+      // &:focus,
+      // &:active {
+      //   color: $color-light-mid;
+      //   text-decoration: none;
+
+      // }
+    }
+
   }
 }
 
@@ -342,6 +367,14 @@ NAV BAR
       width: 100%;
       justify-content: space-evenly;
       padding: 1em 0;
+
+      &:hover {
+        border: 1px solid $color-dark-low;
+        border-radius: 1em;
+        padding: 0.5em 1.2em;
+        background-color: $color-dark-low;
+      }
+
     }
   }
 
