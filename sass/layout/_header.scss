@@ -18,16 +18,16 @@
             LOGO Container
     *********************************/
     &__logo-container {
-      width: 130px;
-      height: 130px;
+      width: 200px;
+      height: 200px;
       background-color: $color-light-low;
 
       &__img-full {
         justify-content: center;
         align-items: center;
         background-size: cover;
-        width: 125px;
-        height: 125px;
+        width: 200px;
+        height: 200px;
       }
 
       &__img-banner {
@@ -36,7 +36,7 @@
     }
 
     /*********************************
-            SEARCH | NAV Bars
+    SEARCH | NAV Bars
     *********************************/
     &__container {
       width: 100%;
@@ -46,20 +46,54 @@
 }
 
 /*********************************
+      QUICK LINKS Container
+*********************************/
+.quick-links-bar {
+  display: flex;
+  justify-content: flex-end;
+  height: 20%;
+
+  &__item {
+    display: flex;
+    width: 150px;
+    height: 100%;
+    justify-content: center;
+
+    &:hover {
+      border: 1px solid $color-dark-low;
+      border-radius: 1em;
+      padding: 0.5em 1.2em;
+      background-color: $color-dark-low;
+    }
+
+    &__text {
+      padding-left: 0.4em;
+    }
+
+    &__link {
+      display: flex;
+      height: 100%;
+      color: $color-light-mid;
+      text-decoration: none;
+      align-items: center;
+    }
+  }
+}
+/*********************************
         SEARCH BAR
 *********************************/
 .search-bar {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   width: 100%;
-  height: 50%;
+  height: 40%;
 
   /*********************************
           FORM Container
   *********************************/
   &__container-form {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     width: 80%;
 
     &__form {
@@ -111,7 +145,8 @@
 
     &__session,
     &__favourites,
-    &__cart {
+    &__cart,
+    &__menu {
       width: 120px;
       display: flex;
       justify-content: center;
@@ -138,49 +173,8 @@
 /*********************************
             MENU TOGGLE
 *********************************/
-.menu-toggle {
+.search-bar__container-icons__menu {
   display: none;
-  flex: 0 0 4em;
-  width: 120px;
-  position: relative;
-  cursor: pointer;
-
-  &__label {
-    display: block;
-    background-color: $color-light-low;
-    width: 100%;
-    height: 100%;
-    &:hover {
-      border: 1px solid $color-dark-low;
-      border-radius: 1em;
-      padding: 1em 0;
-      background-color: $color-dark-low;
-    }
-  }
-
-  &__pan-arriba,
-  &__medallon,
-  &__pan-abajo {
-    display: block;
-    background-color: $color-light-mid;
-    border-radius: 2em;
-    height: 0.3em;
-    position: absolute;
-    left: 0.5em;
-    right: 0.5em;
-    margin: 0 auto;
-  }
-
-  &__pan-arriba {
-    top: 0.8em;
-  }
-  &__medallon {
-    top: 50%;
-    margin-top: -0.15em;
-  }
-  &__pan-abajo {
-    bottom: 0.8em;
-  }
 }
 
 /*********************************
@@ -189,7 +183,7 @@ NAV BAR
 .nav-bar {
   color: $color-light-mid;
   width: 100%;
-  height: 50%;
+  height: 40%;
 
   &__nav-list {
     display: flex;
@@ -244,14 +238,14 @@ NAV BAR
 .categories-bar {
   &__menu {
     display: flex;
-    width: 10%;
+    width: 200px;
     justify-content: center;
     align-items: center;
   }
 
   &__icons {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-evenly;
   }
 
@@ -280,7 +274,7 @@ NAV BAR
         background-color: $color-dark-low;
       }
     }
-    
+
     &__link {
       display: block;
       height: 100%;
@@ -293,9 +287,17 @@ NAV BAR
 /*********************************
 Media Queries
 *********************************/
+@media (max-width: 1000px) {
+  body {
+    width: 100%;
+    padding: 0 1em;
+  }
+}
+
 @media (max-width: 720px) {
   body {
     width: 100%;
+    padding: 0;
   }
 
   .main-header {
@@ -324,10 +326,24 @@ Media Queries
     }
   }
 
+  .quick-links-bar {
+    justify-content: space-evenly;
+
+    &__item {
+      height: 2em;
+
+      &:hover {
+        padding: 0;
+      }
+    }
+  }
+
   .search-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 
     &__form-label {
       display: none;
@@ -340,27 +356,31 @@ Media Queries
     }
 
     &__container-form__form {
-      margin: 0 auto;
-      padding: 1em 0;
+      padding: 0.8em 0;
     }
 
     &__container-icons {
       display: flex;
       width: 100%;
-      justify-content: space-evenly;
-      padding: 1em 0;
+      height: 3em;
 
-      &:hover {
-        border: 1px solid $color-dark-low;
-        border-radius: 1em;
-        padding: 0.5em 1.2em;
-        background-color: $color-dark-low;
+      &__session,
+      &__favourites,
+      &__cart,
+      &__menu {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+
+        &:hover {
+          padding: 0;
+        }
       }
     }
   }
 
-  .menu-toggle {
-    display: block;
+  .search-bar__container-icons__menu {
+    display: flex;
   }
 
   .nav-bar {
@@ -373,15 +393,11 @@ Media Queries
 
     &__nav-item {
       display: flex;
-      font-size: 1em;
       padding: 0.5em 0;
       width: 100%;
 
       &:hover {
-        border: 1px solid $color-dark-low;
-        border-radius: 1em;
         padding: 0.5em 1.2em;
-        background-color: $color-dark-low;
       }
 
       &__text {
@@ -398,8 +414,30 @@ Media Queries
 
   .main-header__categories-bar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  .categories-bar {
+    &__menu {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-self: center;
+    }
+
+    &__icons {
+      height: 4em;
+    }
+
+    &__item {
+      &:hover {
+        padding: 0;
+      }
+    }
+
+    &__list__text {
+      display: none;
+    }
   }
 }

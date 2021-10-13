@@ -166,20 +166,20 @@ body {
           LOGO Container
   *********************************/
   /*********************************
-          SEARCH | NAV Bars
+  SEARCH | NAV Bars
   *********************************/
 }
 .main-header__bars__logo-container {
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
   background-color: #eee;
 }
 .main-header__bars__logo-container__img-full {
   justify-content: center;
   align-items: center;
   background-size: cover;
-  width: 125px;
-  height: 125px;
+  width: 200px;
+  height: 200px;
 }
 .main-header__bars__logo-container__img-banner {
   display: none;
@@ -190,13 +190,43 @@ body {
 }
 
 /*********************************
+      QUICK LINKS Container
+*********************************/
+.quick-links-bar {
+  display: flex;
+  justify-content: flex-end;
+  height: 20%;
+}
+.quick-links-bar__item {
+  display: flex;
+  width: 150px;
+  height: 100%;
+  justify-content: center;
+}
+.quick-links-bar__item:hover {
+  border: 1px solid #46515e;
+  border-radius: 1em;
+  padding: 0.5em 1.2em;
+  background-color: #46515e;
+}
+.quick-links-bar__item__text {
+  padding-left: 0.4em;
+}
+.quick-links-bar__item__link {
+  display: flex;
+  height: 100%;
+  color: #ff7e55;
+  text-decoration: none;
+  align-items: center;
+}
+
+/*********************************
         SEARCH BAR
 *********************************/
 .search-bar {
   display: flex;
-  flex-direction: row;
   width: 100%;
-  height: 50%;
+  height: 40%;
   /*********************************
           FORM Container
   *********************************/
@@ -206,7 +236,6 @@ body {
 }
 .search-bar__container-form {
   display: flex;
-  flex-direction: row;
   width: 80%;
 }
 .search-bar__container-form__form {
@@ -246,7 +275,7 @@ body {
   width: 20%;
   color: #ff7e55;
 }
-.search-bar__container-icons__session, .search-bar__container-icons__favourites, .search-bar__container-icons__cart {
+.search-bar__container-icons__session, .search-bar__container-icons__favourites, .search-bar__container-icons__cart, .search-bar__container-icons__menu {
   width: 120px;
   display: flex;
   justify-content: center;
@@ -254,7 +283,7 @@ body {
   color: #ff7e55;
   font-size: 2em;
 }
-.search-bar__container-icons__session:hover, .search-bar__container-icons__favourites:hover, .search-bar__container-icons__cart:hover {
+.search-bar__container-icons__session:hover, .search-bar__container-icons__favourites:hover, .search-bar__container-icons__cart:hover, .search-bar__container-icons__menu:hover {
   border: 1px solid #46515e;
   border-radius: 0.5em;
   padding: 0.5em 0;
@@ -270,44 +299,8 @@ body {
 /*********************************
             MENU TOGGLE
 *********************************/
-.menu-toggle {
+.search-bar__container-icons__menu {
   display: none;
-  flex: 0 0 4em;
-  width: 120px;
-  position: relative;
-  cursor: pointer;
-}
-.menu-toggle__label {
-  display: block;
-  background-color: #eee;
-  width: 100%;
-  height: 100%;
-}
-.menu-toggle__label:hover {
-  border: 1px solid #46515e;
-  border-radius: 1em;
-  padding: 1em 0;
-  background-color: #46515e;
-}
-.menu-toggle__pan-arriba, .menu-toggle__medallon, .menu-toggle__pan-abajo {
-  display: block;
-  background-color: #ff7e55;
-  border-radius: 2em;
-  height: 0.3em;
-  position: absolute;
-  left: 0.5em;
-  right: 0.5em;
-  margin: 0 auto;
-}
-.menu-toggle__pan-arriba {
-  top: 0.8em;
-}
-.menu-toggle__medallon {
-  top: 50%;
-  margin-top: -0.15em;
-}
-.menu-toggle__pan-abajo {
-  bottom: 0.8em;
 }
 
 /*********************************
@@ -316,7 +309,7 @@ NAV BAR
 .nav-bar {
   color: #ff7e55;
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 .nav-bar__nav-list {
   display: flex;
@@ -366,13 +359,13 @@ NAV BAR
 
 .categories-bar__menu {
   display: flex;
-  width: 10%;
+  width: 200px;
   justify-content: center;
   align-items: center;
 }
 .categories-bar__icons {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-evenly;
 }
 .categories-bar__list {
@@ -409,9 +402,16 @@ NAV BAR
 /*********************************
 Media Queries
 *********************************/
+@media (max-width: 1000px) {
+  body {
+    width: 100%;
+    padding: 0 1em;
+  }
+}
 @media (max-width: 720px) {
   body {
     width: 100%;
+    padding: 0;
   }
 
   .main-header {
@@ -436,10 +436,22 @@ Media Queries
     height: 100%;
   }
 
+  .quick-links-bar {
+    justify-content: space-evenly;
+  }
+  .quick-links-bar__item {
+    height: 2em;
+  }
+  .quick-links-bar__item:hover {
+    padding: 0;
+  }
+
   .search-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100%;
   }
   .search-bar__form-label {
     display: none;
@@ -450,24 +462,24 @@ Media Queries
     align-self: center;
   }
   .search-bar__container-form__form {
-    margin: 0 auto;
-    padding: 1em 0;
+    padding: 0.8em 0;
   }
   .search-bar__container-icons {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
-    padding: 1em 0;
+    height: 3em;
   }
-  .search-bar__container-icons:hover {
-    border: 1px solid #46515e;
-    border-radius: 1em;
-    padding: 0.5em 1.2em;
-    background-color: #46515e;
+  .search-bar__container-icons__session, .search-bar__container-icons__favourites, .search-bar__container-icons__cart, .search-bar__container-icons__menu {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+  .search-bar__container-icons__session:hover, .search-bar__container-icons__favourites:hover, .search-bar__container-icons__cart:hover, .search-bar__container-icons__menu:hover {
+    padding: 0;
   }
 
-  .menu-toggle {
-    display: block;
+  .search-bar__container-icons__menu {
+    display: flex;
   }
 
   .nav-bar {
@@ -479,15 +491,11 @@ Media Queries
   }
   .nav-bar__nav-item {
     display: flex;
-    font-size: 1em;
     padding: 0.5em 0;
     width: 100%;
   }
   .nav-bar__nav-item:hover {
-    border: 1px solid #46515e;
-    border-radius: 1em;
     padding: 0.5em 1.2em;
-    background-color: #46515e;
   }
   .nav-bar__nav-item__text {
     padding-left: 1em;
@@ -500,9 +508,24 @@ Media Queries
 
   .main-header__categories-bar {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  .categories-bar__menu {
+    display: flex;
+    width: 100%;
     justify-content: center;
     align-self: center;
+  }
+  .categories-bar__icons {
+    height: 4em;
+  }
+  .categories-bar__item:hover {
+    padding: 0;
+  }
+  .categories-bar__list__text {
+    display: none;
   }
 }
 .section-slider {
@@ -524,7 +547,8 @@ Media Queries
 }
 
 .main-footer {
-  background-color: lightcoral;
+  background-color: #46515e;
+  color: #eee;
 }
 
 .section-slider {
