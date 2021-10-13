@@ -6,130 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <script src="https://kit.fontawesome.com/7c57e8ac90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <!-- ******** Header: Comienza ******** -->
     <header class="main-header">
-        <div class="main-header__bars">
-            <div class="main-header__bars__logo-container search-bar__logo-container">
-                <div class="main-header__bars__logo-container__img-full"
-                    style="background-image: url('img/logo-full.png')">
-                </div>
-                <div class="main-header__bars__logo-container__img-banner"
-                    style="background-image: url('img/logo-rectangle.png')">
-                </div>
+
+        <div class="container-barra1">
+            <div class="search-bar__logo-container">
+                <div class="search-bar__logo-container__img" style="background-image: url('img/logo-full.png')"> </div>
             </div>
-
-            <div class="main-header__bars__container">
+            <div class="container-bar">
                 <div class="search-bar">
-                    <div class="search-bar__container-form">
-                        <form class="search-bar__container-form__form search-bar__form-container" action="/buscar.html"
-                            method="post">
-                            <label class="search-bar__container-form__form__label search-bar__form-label"
-                                for="busqueda">Buscar</label>
-                            <input class="search-bar__container-form__form__search search-bar__form-search"
-                                id="busqueda" type="search">
-                            <input class="search-bar__container-form__form__submit search-bar__form-submit"
-                                type="submit" value="Buscar">
-                        </form>
+                    <form class="search-bar__form-container">
+                        <label class="search-bar__form-label" for="busqueda">Buscar</label>
+                        <input class="search-bar__form-search" id="busqueda" type="search">
+                        <input class="search-bar__form-submit" type="submit" value="Buscar">
+                    </form>
+                    <div class="search-bar__session-container">
+                        s
                     </div>
-                    <div class="search-bar__container-icons">
-                        <div class="search-bar__container-icons__session">
-                            <a href="login.html" class="serch-bar__container-icons__link">
-                                <i class="fas fa-sign-in-alt"></i>
-                            </a>
-                        </div>
-                        <div class="search-bar__container-icons__favourites">
-                            <a href="favoritos.html" class="serch-bar__container-icons__link">
-                                <i class="fas fa-heart"></i>
-                            </a>
-                        </div>
-                        <div class="search-bar__container-icons__cart">
-                            <a href="carrito.html" class="serch-bar__container-icons__link">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </div>
-                        <div class="menu-toggle">
-                            <label class="menu-toggle__label" for="menu-toggle__checkbox">
-                                <span class="menu-toggle__pan-arriba"></span>
-                                <span class="menu-toggle__medallon"></span>
-                                <span class="menu-toggle__pan-abajo"></span>
-                            </label>
-                        </div>
+                    <div class="search-bar__favourites-container">
+                        F
+                    </div>
+                    <div class="search-bar__carrito-container">
+                        C
+                    </div>
+                    <div class="menu-toggle">
+                        <label class="menu-toggle__label" for="menu-toggle__checkbox">
+                            <span class="menu-toggle__pan-arriba"></span>
+                            <span class="menu-toggle__medallon"></span>
+                            <span class="menu-toggle__pan-abajo"></span>
+                        </label>
                     </div>
                 </div>
-
                 <input type="checkbox" id="menu-toggle__checkbox">
                 <nav class="nav-bar">
                     <ul class="nav-bar__nav-list">
                         <li class="nav-bar__nav-item">
-                            <a class="nav-bar__nav-link" href="index.html"> <i
-                                    class="nav-bar__nav-item__icon fas fa-home"></i>
-                                <div class="nav-bar__nav-item__text">INICIO</div>
-                            </a>
+                            <a class="nav-bar__nav-link" href="index.html">INICIO</a>
                         </li>
                         <li class="nav-bar__nav-item">
-                            <a class="nav-bar__nav-link" href="alta.html"><i
-                                    class="nav-bar__nav-item__icon fas fa-plus"></i>
-                                <div class="nav-bar__nav-item__text">ALTA</div>
-                            </a>
+                            <a class="nav-bar__nav-link" href="alta.html">ALTA</a>
                         </li>
                         <li class="nav-bar__nav-item">
-                            <a class="nav-bar__nav-link" href="contacto.html"><i
-                                    class="nav-bar__nav-item__icon far fa-envelope-open"></i>
-                                <div class="nav-bar__nav-item__text">CONTACTO</div>
-                            </a>
+                            <a class="nav-bar__nav-link" href="contacto.html">CONTACTO</a>
                         </li>
                         <li class="nav-bar__nav-item">
-                            <a class="nav-bar__nav-link" href="nosotros.html"><i
-                                    class="nav-bar__nav-item__icon far fa-address-card"></i>
-                                <div class="nav-bar__nav-item__text">NOSOTROS</div>
-                            </a>
+                            <a class="nav-bar__nav-link" href="nosotros.html">NOSOTROS</a>
                         </li>
                     </ul>
                 </nav>
             </div>
+
         </div>
 
-        <div class="main-header__categories-bar">
+        <div class="categories-bar">
             <div class="categories-bar__menu">
                 menu categorias
 
             </div>
-            <div class="categories-bar__icons">
-                <ul class="categories-bar__list">
-                    <li class="categories-bar__list__item">
-                        <i class="categories-bar__list__icon fas fa-tv"></i>
-                        <div class="categories-bar__list__text">TV</div>
-                    </li>
-                    <li class="categories-bar__list__item">
-                        <i class="categories-bar__list__icon fas fa-mobile-alt"></i>
-                        <div class="categories-bar__list__text">Celulares</div>
-                    </li>
-                    <li class="categories-bar__list__item">
-                        <i class="categories-bar__list__icon fas fa-camera"></i>
-                        <div class="categories-bar__list__text">Camaras</div>
-                    </li>
-                    <li class="categories-bar__list__item">
-                        <i class="categories-bar__list__icon fas fa-headphones-alt"></i>
-                        <div class="categories-bar__list__text">Audio</div>
-                    </li>
-                    <li class="categories-bar__list__item">
-                        <i class="categories-bar__list__icon fas fa-magic"></i>
-                        <div class="categories-bar__list__text">Gadgets</div>
-                    </li>
-                </ul>
+            <div class="categories-bar__lista">
+                
 
             </div>
 
         </div>
-    </header>
-    <!-- ******** Header: Termina ******** -->
 
-    <!-- ******** Main: Comienza ******** -->
+
+    </header>
     <main class="main-main">
         <div class="section-slider">
             <div class="auto_slider">
@@ -435,14 +380,10 @@
             </section>
         </div>
     </main>
-    <!-- ******** Main: Termina ******** -->
-
-    <!-- ******** Foter: Comienza ******** -->
     <footer class="main-footer">
 
         Este es el footer
     </footer>
-    <!-- ******** Foter: Termina ******** -->
 </body>
 
 </html>

@@ -1,17 +1,53 @@
+.section-slider {
+  // background-color: $color-light-low;
+    background-color: orange;
+  //   width: 80%;
+  //   margin: 0 auto;
+}
+
+.section-medios-pago {
+  background-color: grey;
+}
+
+.section-marcas {
+  background-color: lightsteelblue;
+}
+
+.section-productos {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-productos__filtros {
+    padding: 1rem 0.5rem;
+  width: 25%;
+  background-color: lightgreen;
+}
+
+.section-productos__filtros__lista {
+    margin-top: 2rem;
+}
+
+.section-productos-cards {
+    background-color: $color-light-low;
+}
+
 .section-cards {
-    background-color: #f1f2f3;
-    padding: 1em;
+  background-color: #f1f2f3;
+  padding: 1em;
 }
 
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding: 1em;
 }
 
 @media (min-width: 1200px) {
-    .cards-container {
+  .cards-container {
+      padding: 2em;
         gap: 2em;
     }
 }

@@ -1,0 +1,23 @@
+.section-slider {
+  background-color: #000;
+  color: #fff;
+}
+
+.main-main {
+  // display: none;
+  display: flex;
+  flex-direction: column;
+
+  
+  @media (max-width: 768px) {
+      .section-slider {
+          display: none;
+        }
+        
+        .section-productos {
+          display: flex;
+          // flex-direction: column;
+
+        }
+  }
+}
