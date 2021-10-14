@@ -442,3 +442,26 @@ Media Queries
     }
   }
 }
+
+
+@media (max-width: 320px) {
+  body {
+    width: 100%;
+    padding: 0 0.5em;
+  }
+
+  .main-header {
+    display: flex;
+    flex-direction: column;
+
+    &__bars {
+      display: flex;
+      flex-direction: column;
+
+      &__logo-container {
+        display: none;
+      }
+    }
+  }
+
+}

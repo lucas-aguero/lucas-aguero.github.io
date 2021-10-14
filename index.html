@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <script src="https://kit.fontawesome.com/7c57e8ac90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/functions.js"></script>
 
 
 
@@ -125,10 +126,10 @@
         </div>
 
         <div class="main-header__categories-bar">
-            <div class="categories-bar__menu">
+            <!-- <div class="categories-bar__menu">
                 menu categorias
 
-            </div>
+            </div> -->
             <div class="categories-bar__icons">
                 <ul class="categories-bar__list">
                     <li class="categories-bar__list__item">
@@ -171,22 +172,36 @@
 
     <!-- ******** Main: Comienza ******** -->
     <main class="main-main">
-        <div class="section-slider">
+        <!-- <div class="section-slider">
             <div class="auto_slider">
-                slider
+                <div class="slider">
+                    <span id="slide-1"></span>
+                    <span id="slide-2"></span>
+                    <span id="slide-3"></span>
+                    <div class="image-container">
+                      <img src="img/productos/sony-playstation-5.jpg" class="slide" width="500" height="300" />
+                      <img src="img/productos/google-nest-mini.jpg" class="slide" width="500" height="300" />
+                      <img src="img/productos/modem-motorola.jpg" class="slide" width="500" height="300" />
+                    </div>
+                    <div class="buttons">
+                      <a href="#slide-1"></a>
+                      <a href="#slide-2"></a>
+                      <a href="#slide-3"></a>
+                    </div>
+                  </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="section-medios-pago">
+        <!-- <div class="section-medios-pago">
             Medios de pago
         </div>
 
         <div class="section-marcas">
             marcas
-        </div>
+        </div> -->
 
         <div class="section-productos">
-            <section class="section-productos__filtros">
+            <!-- <section class="section-productos__filtros">
                 <h2>Categoria elegida</h2>
                 <p>Se encontraron X productos</p>
 
@@ -225,7 +240,7 @@
                     <dd>$1000-$1999</dd>
                 </dl>
 
-            </section>
+            </section> -->
 
             <section class="section-productos-cards">
                 <header class="section-productos-cards__header">
@@ -236,398 +251,235 @@
 
                 <div class="cards-container">
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/camara-canon.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
-                                </div>
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/notebook-lenovo.jpg')">
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/celular-samsung.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+                        </article>
+                    </a>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/dji-mavic-2-pro.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
-                                </div>
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image"
+                                style="background-image: url('img/productos/apple-iphone-11-pro-max.jpg')">
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                   <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/drone-dji.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+                        </article>
+                    </a>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/google-nest-mini.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
-                                </div>
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/camara-canon.jpg')">
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/lavarropas-dh.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+                        </article>
+                    </a>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/modem-motorola.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
-                                </div>
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image"
+                                style="background-image: url('img/productos/auriculares-sony.jpg')">
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/motorola-moto-e7.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+                        </article>
+                    </a>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/notebook-lenovo.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
-                                </div>
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/parlante-jbl.jpg')">
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/parlante-jbl.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+                        </article>
+                    </a>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/samsung-galaxy-s21-plus-5g.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
-                                </div>
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image"
+                                style="background-image: url('img/productos/google-nest-mini.jpg')">
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/samsung-tu7000.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+                        </article>
+                    </a>
 
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image"
+                                style="background-image: url('img/productos/samsung-galaxy-s21-plus-5g.jpg')">
+                            </div>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/sony-playstation-5.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+                        </article>
+                    </a>
 
-                    <div class="card__full">
-                        <div class="card">
-                            <div class="card__front">
-                                <div class="card__front__img" style="background-image: url(./img/productos/televisor-lg.jpg);">
-                                </div>
-                                <div class="courtain"></div>
-                                <div class="card__front__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero laboriosam unde reprehenderit esse nemo temporibus odit commodi molestias ducimus.</p>
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/drone-dji.jpg')">
+                            </div>
+
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="card__back">
-                                <div class="card__back__body">
-                                    <h2>Producto</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores
-                                        consequatur repellendus, hic amet illo quaerat debitis est tenetur blanditiis eligendi
-                                        laborum corporis libero voluptates earum eius, esse consectetur eaque? Exercitationem,
-                                        nobis iusto omnis ducimus est quaerat non ea illum, esse ad eligendi quia minus
-                                        assumenda odio sit vero saepe.</p>
-                                    </div>
-                                    <div class="card__back__buttons">
-                                        <input type="button" value="Agregar al Carrito">
-                                        <input type="button" value="Comprar">
-                                    </div>
+                        </article>
+                    </a>
+
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/notebook-lenovo.jpg')">
                             </div>
-                        </div>
-                    </div>
+
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/dji-mavic-2-pro.jpg')">
+                            </div>
+
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/camara-canon.jpg')">
+                            </div>
+
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image"
+                                style="background-image: url('img/productos/chromecast-google.jpg')">
+                            </div>
+
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/parlante-jbl.jpg')">
+                            </div>
+
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image"
+                                style="background-image: url('img/productos/google-nest-mini.jpg')">
+                            </div>
+
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/televisor-lg.jpg')">
+                            </div>
+
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a class="card" href="#">
+                        <article class="card__article">
+                            <div class="card__image" style="background-image: url('img/productos/drone-dji.jpg')">
+                            </div>
+
+                            <div class="card__content">
+                                <h3 class="card__heading">Título</h3>
+                                <div class="card__description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
 
                 </div>
             </section>
@@ -637,7 +489,7 @@
 
     <!-- ******** Foter: Comienza ******** -->
     <footer class="main-footer">
-<!--        
+        <!--        
         <i class="fab fa-facebook-f"></i>
         <i class="fab fa-whatsapp"></i>
         <i class="fab fa-instagram"></i>
@@ -651,9 +503,13 @@
             <li></li>
             <li></li>
         </ul> -->
-    
+
     </footer>
     <!-- ******** Foter: Termina ******** -->
+
+
+
+
 </body>
 
 </html>

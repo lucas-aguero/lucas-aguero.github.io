@@ -6,7 +6,12 @@
   align-items: center;
   padding: 20px;
 
-  // height: 100vh;
+  background-image: url("../../img/bkg/fondo-sucursales.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   width: 100%;
 
   color: $color-light-low;
@@ -48,20 +53,38 @@
     margin-bottom: 15px;
   }
 
-  
   &__datos {
     margin-bottom: 10px;
 
     &__text {
       margin-left: 0.5em;
-    
     }
 
     &__link {
       display: flex;
       height: 100%;
-      color: $color-light-mid;
+      color: $color-light-low;
       text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 320px) {
+
+
+  .sucursal-container {
+
+    min-width: 90vw;
+
     }
   }
 
@@ -69,4 +92,5 @@
 
 
 
-}
+
+

@@ -5,7 +5,7 @@
   align-items: center;
 
   background-image: url("../../img/bkg/fondo-login.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -18,17 +18,17 @@
   }
 }
 
-.main-login__blur {
-  background: rgba(
-    224,
-    102,
-    21,
-    0.2
-  ); // Make sure this color has an opacity of less than 1
-  backdrop-filter: blur(10px); // This be the blur
-  height: 50vh;
-  width: 100%;
-}
+// .main-login__blur {
+//   background: rgba(
+//     224,
+//     102,
+//     21,
+//     0.2
+//   ); // Make sure this color has an opacity of less than 1
+//   backdrop-filter: blur(10px); // This be the blur
+//   height: 50vh;
+//   width: 100%;
+// }
 
 .login-container {
   background-color: $color-dark-hig-transparent;
@@ -96,3 +96,14 @@
     }
   }
 }
+
+
+
+@media (max-width: 320px) {
+
+  .login-container {
+    min-width: 90vw;
+  }
+}
+
+

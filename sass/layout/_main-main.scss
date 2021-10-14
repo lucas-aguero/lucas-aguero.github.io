@@ -1,52 +1,46 @@
-.section-slider {
-  background-color: #000;
-  color: #fff;
-}
-
 .main-main {
   // display: none;
   display: flex;
   flex-direction: column;
 
-  
   @media (max-width: 768px) {
-      .section-slider {
-          display: none;
-        }
-        
-        .section-productos {
-          display: flex;
-          // flex-direction: column;
+    .section-slider {
+      display: none;
+    }
 
-        }
+    .section-productos {
+      display: flex;
+    }
   }
 }
 
+// .section-slider {
+//   background-color: $color-light-low;
+// }
 
-.section-slider {
-  // background-color: $color-light-low;
-  background-color: orange;
-  //   width: 80%;
-  //   margin: 0 auto;
-}
+// .section-medios-pago {
+//   // background-color: grey;
+// }
 
-.section-medios-pago {
-  background-color: grey;
-}
-
-.section-marcas {
-  background-color: lightsteelblue;
-}
+// .section-marcas {
+//   // background-color: lightsteelblue;
+// }
 
 .section-productos {
   display: flex;
   flex-direction: row;
+
+  & h2 {
+    margin-left: 1em;
+  }
 }
 
 .section-productos__filtros {
-  padding: 1rem 0.5rem;
-  width: 25%;
-  background-color: lightgreen;
+  padding: 1em 1em;
+  width: 50%;
+  background-color: $color-light-mid-transparent;
+  border-radius: 1em;
+  font-size: 0.8em;
 }
 
 .section-productos__filtros__lista {
@@ -67,12 +61,11 @@
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
-  padding: 1em;
+  padding: 2em 2em 0 2em;
 }
 
 @media (min-width: 1200px) {
   .cards-container {
-    padding: 2em;
     gap: 2em;
   }
 }
