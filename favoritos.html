@@ -20,12 +20,14 @@
     <header class="main-header">
         <div class="main-header__bars">
             <div class="main-header__bars__logo-container search-bar__logo-container">
-                <div class="main-header__bars__logo-container__img-full"
-                    style="background-image: url('img/logo-full.png')">
-                </div>
-                <div class="main-header__bars__logo-container__img-banner"
-                    style="background-image: url('img/logo-rectangle.png')">
-                </div>
+                <a href="index.html">
+                    <div class="main-header__bars__logo-container__img-full"
+                        style="background-image: url('img/logo-full.png')">
+                    </div>
+                    <div class="main-header__bars__logo-container__img-banner"
+                        style="background-image: url('img/logo-rectangle.png')">
+                    </div>
+                </a>
             </div>
 
             <div class="main-header__bars__container">
@@ -66,26 +68,26 @@
                     <div class="search-bar__container-icons">
                         <div class="search-bar__container-icons__session">
                             <a href="login.html" class="search-bar__container-icons__link">
-                                <i class="fas fa-sign-in-alt"></i>
+                                <i class="search-bar__container-icons__icon fas fa-sign-in-alt"></i>
+                                <div class="search-bar__container-icons__text">Login</div>
                             </a>
                         </div>
                         <div class="search-bar__container-icons__favourites">
                             <a href="favoritos.html" class="search-bar__container-icons__link">
-                                <i class="fas fa-heart"></i>
+                                <i class="search-bar__container-icons__icon fas fa-heart"></i>
+                                <div class="search-bar__container-icons__text">Favoritos</div>
                             </a>
                         </div>
                         <div class="search-bar__container-icons__cart">
                             <a href="carrito.html" class="search-bar__container-icons__link">
-                                <i class="fas fa-shopping-cart"></i>
+                                <i class="search-bar__container-icons__icon fas fa-shopping-cart"></i>
+                                <div class="search-bar__container-icons__text">Carrito</div>
                             </a>
                         </div>
                         <div class="search-bar__container-icons__menu">
                             <div class="menu-toggle">
                                 <label class="menu-toggle__label" for="menu-toggle__checkbox">
                                     <i class="fas fa-bars"></i>
-                                    <!-- <span class="menu-toggle__pan-arriba"></span>
-                                    <span class="menu-toggle__medallon"></span>
-                                    <span class="menu-toggle__pan-abajo"></span> -->
                                 </label>
                             </div>
                         </div>
@@ -125,10 +127,6 @@
         </div>
 
         <div class="main-header__categories-bar">
-            <!-- <div class="categories-bar__menu">
-                menu categorias
-
-            </div> -->
             <div class="categories-bar__icons">
                 <ul class="categories-bar__list">
                     <li class="categories-bar__list__item">
@@ -177,23 +175,29 @@
 
     <!-- ******** Foter: Comienza ******** -->
     <footer class="main-footer">
-        <!--        
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-whatsapp"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-pinterest-p"></i>
-        
-                <ul>
-                    <li>Trabaja con nosotros</li>
-                    <li>Términos y Condiciones</li>
-                    <li>Ayuda</li>
-                    <li></li>
-                    <li></li>
-                </ul> -->
-            
-            </footer>
-            <!-- ******** Foter: Termina ******** -->
+        <div class="main-footer__social-networks">
+            <div class="main-footer__social-networks__item"><i class="fab fa-facebook-f"></i></div>
+            <div class="main-footer__social-networks__item"><i class="fab fa-whatsapp"></i></div>
+            <div class="main-footer__social-networks__item"><i class="fab fa-instagram"></i></div>
+            <div class="main-footer__social-networks__item"><i class="fab fa-google-plus-g"></i></div>
+            <div class="main-footer__social-networks__item"><i class="fab fa-pinterest-p"></i></div>
+        </div>
+        <div class="main-footer__links">
+            <a class="main-footer__links__link" href="ayuda.html">
+                <i class="main-footer__links__link__icon fas fa-network-wired"></i>
+                <div class="main-footer__links__link__text"> Trabaja con nosotros</div>
+            </a>
+            <a class="main-footer__links__link" href="ayuda.html">
+                <i class="main-footer__links__link__icon fas fa-gavel"></i>
+                <div class="main-footer__links__link__text"> Términos y Condiciones</div>
+            </a>
+            <a class="main-footer__links__link" href="ayuda.html">
+                <i class="main-footer__links__link__icon fas fa-question"></i>
+                <div class="main-footer__links__link__text"> Ayuda</div>
+            </a>
+        </div>
+    </footer>
+    <!-- ******** Foter: Termina ******** -->
 </body>
 
 </html>

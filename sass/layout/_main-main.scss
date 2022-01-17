@@ -1,71 +1,148 @@
 .main-main {
-  // display: none;
   display: flex;
   flex-direction: column;
-
-  @media (max-width: 768px) {
-    .section-slider {
-      display: none;
-    }
-
-    .section-productos {
-      display: flex;
-    }
-  }
+  width: 100%;
 }
-
-// .section-slider {
-//   background-color: $color-light-low;
-// }
-
-// .section-medios-pago {
-//   // background-color: grey;
-// }
-
-// .section-marcas {
-//   // background-color: lightsteelblue;
-// }
 
 .section-productos {
   display: flex;
   flex-direction: row;
+  gap: 1em;
 
-  & h2 {
-    margin-left: 1em;
+  &__filtros {
+    height: 100%;
+    width: 300px;
+    background-color: $color-light-mid-transparent;
+    border-radius: 1em;
+    font-size: 1em;
+    padding-bottom: 1em;
+
+    & h2 {
+      margin-top: 0.5em;
+      text-align: center;
+    }
+
+    & p {
+      padding-left: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    &__lista {
+      & dt {
+        padding-bottom: 0.2em;
+        font-weight: bold;
+      }
+
+      & dd {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    background-color: $color-light-low;
+    border-radius: 1em;
+
+    &__header {
+      & h2 {
+        margin-top: 0.5em;
+        text-align: center;
+      }
+    }
+
+    &__container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 0.5em;
+      perspective: 1000px;
+      gap: 2em;
+    }
   }
 }
 
-.section-productos__filtros {
-  padding: 1em 1em;
-  width: 50%;
-  background-color: $color-light-mid-transparent;
-  border-radius: 1em;
-  font-size: 0.8em;
+.container__acordeon__item {
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+
+  &__title {
+    margin: 0;
+    padding: 0 1rem;
+    border-radius: 1em;
+
+    &:hover {
+      background-color: $color-light-mid;
+      border-radius: 1em;
+    }
+  }
+
+  &__content {
+    display: none;
+  }
 }
 
-.section-productos__filtros__lista {
-  margin-top: 2rem;
+.container__acordeon__item--show .container__acordeon__item__content {
+  display: block;
+  margin-left: 1em;
 }
 
-.section-productos-cards {
-  background-color: $color-light-low;
+/**********************************************
+************  Media Queries  ******************
+***********************************************/
+
+/******************************/
+/*********  1000px ************/
+/******************************/
+@media (max-width: 1000px) {
+  .section-productos {
+    gap: 0.5em;
+
+    &__cards {
+      &__container {
+        gap: 1.5em;
+      }
+    }
+  }
 }
 
-.section-cards {
-  background-color: #f1f2f3;
-  padding: 1em;
+/******************************/
+/*********   720px ************/
+/******************************/
+@media (max-width: 720px) {
+  .section-productos {
+    display: flex;
+    flex-direction: column;
+
+    &__filtros {
+      width: 100%;
+      font-size: 0.9em;
+    }
+
+    &__cards {
+      &__container {
+        gap: 1em;
+      }
+    }
+  }
 }
 
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-  padding: 2em 2em 0 2em;
-}
+/******************************/
+/*********   300px ************/
+/******************************/
+@media (max-width: 300px) {
+  .section-productos {
+    &__filtros {
+      font-size: 0.8em;
+    }
 
-@media (min-width: 1200px) {
-  .cards-container {
-    gap: 2em;
+    &__cards {
+      &__container {
+        gap: 0.5em;
+      }
+    }
   }
 }
